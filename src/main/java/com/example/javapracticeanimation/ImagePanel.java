@@ -6,11 +6,12 @@ import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 
-public class ImagePanel extends JPanel {
+public abstract class ImagePanel extends JPanel {
 
-    private RectangleImage image = null;
-
-    int x, y;
+    protected RectangleImage image = null;
+    int height;
+    int width;
+    protected int x, y;
 
     public ImagePanel() {
         try {
@@ -23,18 +24,12 @@ public class ImagePanel extends JPanel {
                 System.out.println("Image not found.");
             }
             image = new RectangleImage(inImage, 300, 300);
+            ImageIcon icon = new ImageIcon(image.getImage());
+            width = icon.getIconWidth();
+            height = icon.getIconHeight();
         } catch (IOException ex) {
             // handle exception...
         }
-    }
-
-    private boolean checkBorders(Rectangle bounds){
-        if (this.x < (bounds.getMinX()) ||
-                this.x > (bounds.getWidth())) {
-            return true;
-        }
-        return (this.y > (bounds.getHeight())) ||
-                (this.y < (bounds.getMinY()));
     }
     @Override
     protected void paintComponent(Graphics g) {
@@ -45,17 +40,6 @@ public class ImagePanel extends JPanel {
         super.paintComponent(g);
     }
 
-    public void update(int step, JFrame borders) {
-
-        if(!checkBorders(borders.getBounds())) {
-            x = 0;
-            y = 0;
-        }
-
-        x += step;
-        y += step;
-        //y += step;
-        image.Move(x, y);
-        repaint();
-    }
+    abstract void update(int step, JFrame borders);
 }
+
