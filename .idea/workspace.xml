@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a623041-1e58-42e2-a526-aa7fcad9999c" name="Changes" comment="load main structure, implement controller for imagePanel">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javapracticeanimation/DiagonalMovementPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javapracticeanimation/SquareMovementPanel.java" afterDir="false" />
+    <list default="true" id="7a623041-1e58-42e2-a526-aa7fcad9999c" name="Changes" comment="added demo and a new SquareMovementPanel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javapracticeanimation/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javapracticeanimation/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javapracticeanimation/DiagonalMovementPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javapracticeanimation/DiagonalMovementPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javapracticeanimation/ImagePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javapracticeanimation/ImagePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +94,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710141077569</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added demo and a new SquareMovementPanel">
+      <option name="closed" value="true" />
+      <created>1710403038580</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710403038580</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -115,6 +121,7 @@
     <MESSAGE value="update .gitignore" />
     <MESSAGE value="load image in resource folder" />
     <MESSAGE value="load main structure, implement controller for imagePanel" />
-    <option name="LAST_COMMIT_MESSAGE" value="load main structure, implement controller for imagePanel" />
+    <MESSAGE value="added demo and a new SquareMovementPanel" />
+    <option name="LAST_COMMIT_MESSAGE" value="added demo and a new SquareMovementPanel" />
   </component>
 </project>

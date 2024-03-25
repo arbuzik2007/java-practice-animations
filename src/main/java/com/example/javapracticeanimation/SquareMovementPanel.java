@@ -20,11 +20,9 @@ public class SquareMovementPanel extends ImagePanel{
     boolean isRightFace = true;
     boolean isTopFace = true;
 
-    int state = 0;
-
     @Override
     void update(int step, JFrame frame) {
-        var borders = new Rectangle(0, 0, 1250, 1000);
+        var borders = new Rectangle(0, 0, frame.getWidth(), frame.getHeight());
         if (checkBorderXRight(borders))
         {
             isRightFace = false;

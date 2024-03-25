@@ -23,10 +23,11 @@ public abstract class ImagePanel extends JPanel {
             } catch (Exception e) {
                 System.out.println("Image not found.");
             }
-            image = new RectangleImage(inImage, 300, 300);
-            ImageIcon icon = new ImageIcon(image.getImage());
-            width = icon.getIconWidth();
-            height = icon.getIconHeight();
+            ImageIcon icon = new ImageIcon(inImage);
+            int scale = 3;
+            width = icon.getIconWidth() / scale;
+            height = icon.getIconHeight() / scale;
+            image = new RectangleImage(inImage, width, height);
         } catch (IOException ex) {
             // handle exception...
         }
